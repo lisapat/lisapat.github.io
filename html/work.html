@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <title> Work - Raj Trivedi </title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-211590821-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-211590821-1');
+ </script>
+ </head>
+
+ <body>
+
+   <!--
+       Name: Raj Trivedi
+       Assignment Name: Responsive Personal Portfolio Website
+       UDEL email address: triudrav@udel.edu
+       Course Number: CISC474 010
+   -->
+
+  <div class="header">
+   <a href="/index.html" id="homePageLink">Home</a> &nbsp; &nbsp;
+   <a href="work.html" id="workPageLink">Work</a> &nbsp; &nbsp;
+   <a href="events.html" id="eventsPageLink"> Extracurricular Events</a> &nbsp; &nbsp;
+   <span class="dropdown">
+     <a href="javascript:void(0)" class="dropbtn">Class Links</a> &nbsp; &nbsp;
+     <span class="dropdown-content">
+       <a href="https://mattm401.github.io">CISC474 Course Website</a>
+       <a href="https://acastro0726.github.io/">Next Student</a>
+       <a href="https://paultownshend.github.io/personalWebsite/">Previous Student</a>
+     </span>
+   </span>
+   <a href="contact_form.html" id="contactFormLink">Contact</a> &nbsp; &nbsp;
+  </div>
+
+  <div id="workpage-container">
+   <h2 id="workpageSectionOneTitle"> PROJECTS </h2>
+
+   <div id="workpageSectionOne">
+        <div id="workpageSectionOne-introduction"> 
+            As an undergrad, I also got several opportunities to expand my network by engaging in different clubs and activities. These clubs and activities 
+            were mostly at my college, however, some activities were outside of my college and hosted by top companies. Listed below are the main clubs and 
+            activities that I was part of:
+        </div>    
+
+        <br>
+    
+        <div id="workpageSectionOne-description">
+            <p id="projectOneTitle"> User-Level Thread Library </p>
+
+            <p id="projectOne-description">
+                This project involved <b>designing and implementing a user-level thread library</b> which supports <i>thread creation</i>, <i>thread scheduling via context-switching</i>, <i>thread synchronization using Semaphores</i>, and <i>Inter-Thread Communication(ITC) mechanism using Message Passing and Mailbox functionality. </i> 
+                It utilizes high level <i>C language</i> to achieve all of the above given functionality. <br><br> 
+                Codebase of this project can be accessed using the link: <a href="https://github.com/bluehenraj/User-Level-Thread-Library">User-Level Thread Library</a>
+            </p>
+
+            <br>
+
+            <p id="projectTwoTitle"> User-Level Unix Shell Implementation </p>
+        
+            <p id="projectTwo-description">
+                This project involved <i>learning how a Unix shell works</i>, <i>writing a simple shell</i>, <i>creating processes</i>, <i>handling signals</i>, <i>using Unix system calls and C library function calls</i>, and <i>becoming a better programmer in general. </i>  The user-level shell implements <b>built-in commands</b> like 
+                <i>cd</i>, <i>pwd</i>, <i>which</i>, <i>where</i>, <i>kill</i>, <i>watchuser</i> etc., <b>external commands</b> like <i>ls</i>, <i>grep</i>, <i>vim</i>, <i>rm</i> etc. using <i>exec()</i> system call of Unix, <b>Inter-Process Communication(IPC) mechanism</b> using <i>Piping functionality</i>, and <b>File Redirection mechanism</b>. 
+                This project, like the first one, also utilizes high level <i>C language</i> for the implementation. <br><br> 
+                Codebase of this project can be accessed using the link: <a href="https://github.com/bluehenraj/User-Level-Unix-Shell">User-Level Unix Shell</a>
+            </p>
+
+            <br>
+
+
+            <p id="projectThreeTitle"> Garden Design Desktop Application </p>
+        
+            <p id="projectThree-description">
+                This is, by far, my one of the favorite projects. In this desktop application, user can create his/her own garden with some cool features in-place. Those features include but not limited to: <i>drag-n-drop event for plants</i>, <i>serializing/deserializing for saving/loading garden</i>, <i>customizable background</i>, and <i>different garden 
+                menus for end-user and application interaction.</i> This application utilizes <i>Model-View-Controller(MVC) Design Pattern</i> and <i>Object-Oriented-Programming(OOP) concepts</i> in <i>Java programming language.</i> <br><br> 
+                Codebase of this application can be accessed using the link: <a href="https://github.com/bluehenraj/MyCoolGardenApp">My Cool Garden App</a>
+        
+            </p>
+        </div>
+    </div>        
+
+    <br>
+    <br>
+
+    <h2 id="workpageSectionTwoTitle"> RESUME </h2>
+    <div id="workpageSectionTwo">
+        <div id="resumeViewerSection">
+            <iframe src="/local/resume.pdf#toolbar=0" title="My Resume"></iframe>
+            <br>
+            <br>
+            <a href="/local/resume.pdf" id="download-btn" download="Trivedi, Raj_Resume.pdf">Download</a>
+        </div>
+        <div id="resumeNotSupportedSection">
+            <p> Resume Viewer is not supported in this browser because of its insufficient width. :(</p>
+            <br>
+            <br>
+            <a href="/local/resume.pdf" id="view-externally-btn" target="_blank">View Externally</a>
+        </div>   
+
+        <script>
+            setInterval(function(){
+                if(window.innerWidth <= 770){
+                    document.getElementById("resumeViewerSection").style.display = "none";
+                    document.getElementById("resumeNotSupportedSection").style.display = "block";
+                    document.getElementById("view-externally-btn").style = "background-color: #199319; color: white; padding: 30px 50px; text-decoration: none;"
+                }
+                else{
+                    document.getElementById("resumeViewerSection").style.display = "block";
+                    document.getElementById("resumeNotSupportedSection").style.display = "none";
+                }
+            } , 500);
+        </script> 
+    </div>
+  </div>  
+
+  <br>
+  <br>
+
+  <div class="footer">
+   <br>
+   <br>
+   <br>
+   <a href="/index.html">Home</a> &nbsp; &nbsp;
+   <a href="work.html">Work</a> &nbsp; &nbsp;
+   <a href="events.html"> Extracurricular Events</a> &nbsp; &nbsp;
+   <a href="contact_form.html"> Contact</a> &nbsp; &nbsp;
+   <br>
+   <br>
+   <br>
+   <div id="social-media-icons-container">
+    <br>
+    <br>
+    <img src="/img/linkedin-logo-png.png" onclick="window.location.href='https://www.linkedin.com/in/raj-trivedi/'" id="linkedin-logo-img" alt="LinkedIn Logo Image" width="30" height="30"> &nbsp;&nbsp;
+    <img src="/img/github-logo-png.png" onclick="window.location.href='https://github.com/bluehenraj'" id="github-logo-img" alt="GitHub Logo Image" width="30" height="30"> &nbsp;&nbsp;
+    <a href="mailto:triudrav@udel.edu"><img src="/img/mail-logo-png.png" id="mail-logo-img" alt="Mail Logo Image" width="30" height="30"></a>
+    <br>
+    <br>
+   </div>
+   <br>
+   <br>
+   <br>
+   <em>© 2021 Raj Trivedi. All rights reserved. </em>
+  </div>
+
+ </body>
+</html>
